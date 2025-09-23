@@ -754,8 +754,11 @@ dependencies = [
 name = "dz_validator_pda"
 version = "0.1.0"
 dependencies = [
+ "anyhow",
+ "bs58",
  "solana-client",
  "solana-sdk",
+ "solana-system-interface",
  "tokio",
 ]
 
