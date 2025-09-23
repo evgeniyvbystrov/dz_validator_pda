@@ -11,7 +11,7 @@ A comprehensive utility for managing Program Derived Addresses (PDAs) for valida
 - **Gossip Network Validation**: Verify validator presence in Solana gossip network with automatic funding cancellation for inactive validators
 - **CLI Interface**: Three main operations: `pda-address`, `pda-balance`, and `pda-fund-address`
 - **Error Handling**: Comprehensive error handling with detailed messages
-- **Network Support**: Works with Solana mainnet and custom RPC endpoints
+- **Network Support**: Works with Solana mainnet
 - **Safety Features**: Automatic validation checks to prevent funding inactive validators
 
 ## Installation
@@ -114,7 +114,7 @@ PDA Balance: 0 lamports (0.0 SOL)
 Transfer SOL from a keypair to a validator's PDA account.
 
 ```bash
-cargo run -- pda-fund-address <validator_address> <keypair_path> <amount_lamports>
+cargo run -- pda-fund-address <validator_address> <keypair_path> <amount_sol>
 ```
 
 **Example:**
